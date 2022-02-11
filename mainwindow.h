@@ -4,6 +4,8 @@
 #include <QTextBrowser>
 #include <QPushButton>
 #include <QMainWindow>
+#include <QString>
+#include <gamewindow.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,7 +24,10 @@ private slots:
 
     void on_exit_clicked();
 
+    void on_set_clicked();
+
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H

@@ -6,10 +6,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QSize window_size = MainWindow::size();
-    ui->textBrowser->move(window_size.width()/3,window_size.height()/3);
-    ui->start->move(window_size.width()/3 + 100,window_size.height()/3 + 100);
-    ui->exit->move(window_size.width()/3 + 100,window_size.height()/3 + 150);
+    ui->textEdit->setReadOnly(true);
+    QSize window_size = MainWindow::size()/2;
+    QSize textS = ui->textEdit->size()/2;
+    QSize buttonS = ui->start->size()/2;
+    ui->set->setVisible(false);
+    ui->textEdit->move(window_size.width() - textS.width(),window_size.height() - textS.width());
+    ui->start->move(window_size.width() - buttonS.width(),window_size.height() - buttonS.height() + 10);
+    ui->set->move(window_size.width() - buttonS.width(),window_size.height() - buttonS.height() + 10);
+    ui->exit->move(window_size.width() - buttonS.width(),window_size.height() - buttonS.height() + 40);
     /*push_button2 = new QPushButton(this);
     push_button2->setText("Click");
     push_button2->setGeometry(QRect(QPoint(0, 0), QSize(100, 50)));
@@ -24,12 +29,25 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_start_clicked()
 {
-    ui->textBrowser->setHtml("<p align='center'> Enter your Name </p>");
-    ui->textBrowser->setReadOnly(false);
+    ui->textEdit->setHtml("<p align='center'> Enter your Name </p>");
+    ui->textEdit->setReadOnly(false);
+    ui->start->setDisabled(true);
+    ui->set->setEnabled(true);
+    ui->start->setVisible(false);
+    ui->set->setVisible(true);
 }
 
 void MainWindow::on_exit_clicked()
 {
     QApplication::quit();
+}
+
+
+void MainWindow::on_set_clicked()
+{
+    QString name = ui->textEdit->toPlainText();
+    GameWindow *g = new GameWindow(name);
+    g->show();
+    close();
 }
 
