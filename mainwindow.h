@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QTextBrowser>
 #include <QPushButton>
 #include <QMainWindow>
 
@@ -17,10 +18,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_start_clicked();
+
+    void on_exit_clicked();
 
 private:
     Ui::MainWindow *ui;
-    QPushButton *push_button2;
 };
 #endif // MAINWINDOW_H
