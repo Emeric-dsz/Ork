@@ -75,7 +75,7 @@
       <height>171</height>
      </rect>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="North">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -85,10 +85,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>North</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="West">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -98,10 +98,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>West</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="South">
      <property name="geometry">
       <rect>
        <x>80</x>
@@ -111,23 +111,23 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>South</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="Attack">
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>20</y>
+       <y>10</y>
        <width>83</width>
        <height>29</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Attack</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="East">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -137,23 +137,26 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>East</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="Take">
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>80</y>
+       <y>50</y>
        <width>83</width>
        <height>29</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Take</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="textEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -163,7 +166,10 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QPushButton" name="Enter">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>270</x>
@@ -173,7 +179,20 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>Enter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Map">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>90</y>
+       <width>83</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Map</string>
      </property>
     </widget>
    </widget>

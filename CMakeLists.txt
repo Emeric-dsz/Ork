@@ -22,6 +22,10 @@ set(PROJECT_SOURCES
         gamewindow.ui
         gamewindow.h
         gamewindow.cpp
+        character.cpp
+        character.h
+        room.h
+        room.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
