@@ -8,6 +8,8 @@ Wordle::Wordle(){
             words.append(QString::fromStdString(line.substr(0,5)));
         }
     }
+    else
+        throw("File not found.");
 }
 
 QString Wordle::getWord(){

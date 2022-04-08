@@ -41,7 +41,7 @@ private slots:
 
 
 
-    void on_Take_clicked(bool checked);
+    void on_Take_clicked();
 
     void on_Inventory_itemDoubleClicked(QListWidgetItem *item);
 

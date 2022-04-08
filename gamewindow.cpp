@@ -162,7 +162,7 @@ void GameWindow::on_West_clicked()
 }
 
 
-void GameWindow::on_Take_clicked(bool checked)
+void GameWindow::on_Take_clicked()
 {
     potion *obj = current->getObject();
     QString name = obj->Name(*obj);
