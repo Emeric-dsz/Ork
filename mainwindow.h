@@ -5,7 +5,7 @@
 #include <QPushButton>
 #include <QMainWindow>
 #include <QString>
-#include <gamewindow.h>
+#include "gamewindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

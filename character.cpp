@@ -1,12 +1,19 @@
 #include "character.h"
 
-Character::Character(QString player)
+int Character::getLife()
 {
-    lifepoints = 100;
-    name = player;
+    return lifepoints;
 }
-int Character::getLife(Character *player)
-{
-    return player->lifepoints;
+
+void Character::setLife(int nb){
+    lifepoints += nb;
+}
+
+void Character::setAttack(int num){
+    attack -= num;
+}
+
+void Character::heal(int nb){
+    lifepoints = nb;
 }
 
